@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation Menu -->
+  <header>
+    <h1>My Portfolio</h1>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Portfolio Content -->
-    <h2>My Work</h2>
-    <p>Here are a few projects and skills I've worked on:</p>
+  <section id="portfolio">
+    <h2>Featured Projects</h2>
 
-    <!-- Table of Skills -->
-    <table border="1" cellpadding="8">
-        <tr>
-            <th>Skill/Project</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>HTML</td>
-            <td>Building structured web pages with headings, links, and images.</td>
-        </tr>
-        <tr>
-            <td>CSS</td>
-            <td>Styling pages with colors, fonts, and layouts.</td>
-        </tr>
-        <tr>
-            <td>Simple Portfolio Website</td>
-            <td>This project demonstrates teamwork and creativity.</td>
-        </tr>
-    </table>
+    <article>
+      <h3>Project 1: Jayyy’s Tech Store Website</h3>
+      <p>
+        A mock e-commerce website built with HTML and CSS, designed with a clean shopping cart concept and responsive layout.
+      </p>
+      <img src="images/techstore.jpg" alt="Jayyy's Tech Store Screenshot" width="400">
+    </article>
 
-    <!-- Video -->
-    <h3>Sample Project Video</h3>
-    <video width="320" height="240" controls>
-        <source src="your-video-url.mp4" type="video/mp4">
+    <article>
+      <h3>Project 2: Networking Setup (CIT 236 Lab)</h3>
+      <p>
+        Configured VLANs, trunking, and DHCP services using Cisco Packet Tracer to simulate enterprise network communication.
+      </p>
+      <img src="images/networking-lab.jpg" alt="Networking lab topology" width="400">
+    </article>
+
+    <article>
+      <h3>Project 3: Python Sorting Program</h3>
+      <p>
+        Created a selection sort program that arranges names by length and alphabetically — demonstrating algorithmic thinking.
+      </p>
+      <video width="400" height="240" controls>
+        <source src="videos/sorting-demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
-    </video>
+      </video>
+    </article>
+  </section>
 
+  <footer>
+    <p>&copy; 2025 Jaden Joseph</p>
+  </footer>
 </body>
 </html>
