@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector("ul");
+            if (menu.className === "active") {
+                menu.className = "";
+            } else {
+                menu.className = "active";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Content -->
+    <h2>About Me</h2>
+    <p>Hello! I'm a student majoring in Information Technology at the T. A. Marryshow Community College St. George Campus. In future, I would like to specialize in Aviation and become a Pilot. This portfolio shows my progress and projects.</p>
+    <img src="your-image-url.jpg" alt="A picture representing me" width="300">
+
+</body>
+</html>

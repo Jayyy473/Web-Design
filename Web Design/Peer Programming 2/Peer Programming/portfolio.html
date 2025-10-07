@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector("ul");
+            if (menu.className === "active") {
+                menu.className = "";
+            } else {
+                menu.className = "active";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Portfolio Content -->
+    <h2>My Work</h2>
+    <p>Here are a few projects and skills I've worked on:</p>
+
+    <!-- Table of Skills -->
+    <table cellpadding="8">
+        <tr>
+            <th>Skill/Project</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Building structured web pages with headings, links, and images.</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Styling pages with colors, fonts, and layouts.</td>
+        </tr>
+        <tr>
+            <td>Simple Portfolio Website</td>
+            <td>This project demonstrates teamwork and creativity.</td>
+        </tr>
+    </table>
+
+    <!-- Video -->
+    <h3>Sample Project Video</h3>
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>
