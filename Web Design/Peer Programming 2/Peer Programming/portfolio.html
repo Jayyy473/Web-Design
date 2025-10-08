@@ -1,63 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        function toggleMenu() {
-            var menu = document.querySelector("ul");
-            if (menu.className === "active") {
-                menu.className = "";
-            } else {
-                menu.className = "active";
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation Menu -->
+  <header>
+    <h1>My Portfolio</h1>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Portfolio Content -->
-    <h2>My Work</h2>
-    <p>Here are a few projects and skills I've worked on:</p>
+  <section id="about">
+    <h2>My Skills</h2>
+    <p>
+      Over the past few years, I’ve developed a strong foundation in web development, networking, and programming. 
+      Through coursework and personal projects, I’ve learned to combine creativity with technical skills to build efficient and user-friendly solutions. 
+      The table below highlights the main areas I’ve worked in and the level of experience I’ve gained so far.
+    </p>
 
-    <!-- Table of Skills -->
-    <table cellpadding="8">
+    <section id="skills">
+      <table border="1" cellspacing="0" cellpadding="8">
         <tr>
-            <th>Skill/Project</th>
-            <th>Description</th>
+          <th>Skill</th>
+          <th>Experience Level</th>
+          <th>Area of Use</th>
         </tr>
         <tr>
-            <td>HTML</td>
-            <td>Building structured web pages with headings, links, and images.</td>
+          <td>HTML & CSS</td>
+          <td>Intermediate</td>
+          <td>Web Design</td>
         </tr>
         <tr>
-            <td>CSS</td>
-            <td>Styling pages with colors, fonts, and layouts.</td>
+          <td>JavaScript</td>
+          <td>Beginner</td>
+          <td>Web Interactivity</td>
         </tr>
         <tr>
-            <td>Simple Portfolio Website</td>
-            <td>This project demonstrates teamwork and creativity.</td>
+          <td>Python</td>
+          <td>Intermediate</td>
+          <td>Automation & Projects</td>
         </tr>
-    </table>
+        <tr>
+          <td>Cisco Packet Tracer</td>
+          <td>Intermediate</td>
+          <td>Network Simulation</td>
+        </tr>
+        <tr>
+          <td>Microsoft Office</td>
+          <td>Advanced</td>
+          <td>Documentation & Presentations</td>
+        </tr>
+        <tr>
+          <td>C++</td>
+          <td>Intermediate</td>
+          <td>Programming</td>
+        </tr>
+        <tr>
+          <td>Git & GitHub</td>
+          <td>Intermediate</td>
+          <td>Version Control</td>
+        </tr>
+        <tr>
+          <td>Networking</td>
+          <td>Intermediate</td>
+          <td>System Configuration</td>
+        </tr>
+      </table>
+    </section>
 
-    <!-- Video -->
-    <h3>Sample Project Video</h3>
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <p>
+      These skills have allowed me to work on projects that involve building websites, creating algorithms, 
+      and setting up network configurations using tools like Cisco Packet Tracer. 
+      My goal is to continue improving and expanding my technical expertise while applying these skills 
+      to real-world scenarios and professional environments.
+    </p>
+  </section>
 
+  <footer>
+    <p>&copy; 2025 Jaden Joseph</p>
+  </footer>
 </body>
 </html>

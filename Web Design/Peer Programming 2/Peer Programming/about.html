@@ -1,38 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        function toggleMenu() {
-            var menu = document.querySelector("ul");
-            if (menu.className === "active") {
-                menu.className = "";
-            } else {
-                menu.className = "active";
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation Menu -->
+  <header>
+    <h1>About Me</h1>
     <nav>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- About Content -->
-    <h2>About Me</h2>
-    <p>Hello! I'm a student majoring in Information Technology at the T. A. Marryshow Community College St. George Campus. In future, I would like to specialize in Aviation and become a Pilot. This portfolio shows my progress and projects.</p>
-    <img src="your-image-url.jpg" alt="A picture representing me" width="300">
+  <section id="about">
+    <h2>Who I Am</h2>
+    <p>
+      I’m Jaden Joseph, a student at T. A. Marryshow Community College with a growing passion for software development and technology.
+      My interests include web design, programming, and networking — all aimed at building practical and creative digital solutions.
+    </p>
 
+    <img src="your-image-url.jpg" alt="Profile photo of Jaden" width="300">
+    <p>
+      I’m currently honing my skills in HTML, CSS, JavaScript, Python, and C++ through coursework and personal projects.
+      I enjoy collaborating with others, learning new technologies, and applying my knowledge to real-world challenges.
+    </p>
+
+    <h2>Interests</h2>
+    <section id="interests">
+    <table border="1" cellspacing="0" cellpadding="8">
+      <tr>
+        <th>Interest</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Web Development</td>
+        <td>Designing and building websites that are user-friendly and visually appealing.</td>
+      </tr>
+      <tr>
+        <td>Software Development</td>
+        <td>Creating applications and tools to solve real-world problems.</td>
+      </tr>
+      <tr>
+        <td>Networking</td>
+        <td>Understanding how data travels across networks and configuring systems for optimal performance.</td>
+      </tr>
+      <tr>
+        <td>Cybersecurity</td>
+        <td>Learning about protecting systems and data from cyber threats.</td>
+      </tr>
+      <tr>
+        <td>AI & Machine Learning</td>
+        <td>Exploring the potential of artificial intelligence to transform industries.</td>
+      </tr>
+      <tr>
+        <td>Gaming</td>
+        <td>Exploring the world of video games, from design to development.</td>
+      </tr>
+      <tr> 
+        <td>Mobile technology</td>
+        <td>Exploring the latest advancements in mobile devices and applications.</td>
+      </tr>
+      <tr>
+        <td>Cloud Computing</td>
+        <td>Understanding cloud services and their applications in modern IT infrastructure.</td>
+      </tr>
+    </table>
+    </section>
+    <p>
+      I believe in continuous learning, teamwork, and creativity as key ingredients for success in technology.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jaden Joseph</p>
+  </footer>
 </body>
 </html>

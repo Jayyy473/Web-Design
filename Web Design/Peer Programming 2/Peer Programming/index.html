@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        function toggleMenu() {
-            var menu = document.querySelector("ul");
-            if (menu.className === "active") {
-                menu.className = "";
-            } else {
-                menu.className = "active";
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | My Personal Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="flex flex-col h-screen">
-
-    <!-- Navigation Menu -->
+<body>
+  <header>
+    <h1>Welcome to My Personal Website</h1>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Home Content -->
-    <h2>Welcome to My Portfolio</h2>
-    <p>This is a simple personal website showcasing my work and interests.</p>
+  <section id="home">
+    <h2>Hello, I'm Jaden Joseph</h2>
+    <p>
+      I'm an aspiring software developer passionate about creating innovative digital experiences.
+      This website showcases my interests, and journey as I continue learning and growing in web development.
+    </p>
+    <video width="600" controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>
+      Explore my site to learn more about who I am, what I do, and how to get in touch.
+    </p>
+  </section>
 
+  <footer>
+    <p>&copy; 2025 Jaden Joseph. All rights reserved.</p>
+  </footer>
 </body>
 </html>
