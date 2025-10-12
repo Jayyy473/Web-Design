@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: #204a87;
+  text-align: center;
+  min-height: 100vh;
+}
+
+header {
+  padding: 40px 0 100px;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+
+.nav-brand {
+  width: 120px;
+  height: auto;
+  opacity: 0.7;
+}
+
+.nav-primary {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+  padding: 8px 12px;
+}
+
+.nav-item a:hover {
+  color: #00c7e6;
+}
+
+.cta-btn a {
+  background-color: #00c7e6;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn a:hover {
+  background-color: #009bb3;
+  transform: scale(1.05);
+}
+
+.header-title {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 300;
+  margin-top: 140px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.header-subtitle {
+  color: #8aaed1;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 15px 0 40px;
+  text-transform: capitalize;
+}
+
+#button-container {
+  margin-bottom: 80px;
+}
+
+.header-btn {
+  display: inline-block;
+  background-color: #00c7e6;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header-btn:hover {
+  background-color: #009bb3;
+  transform: scale(1.05);
+}
+
+.header-services {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 85%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.service {
+  background-color: transparent;
+  padding: 30px;
+  width: 320px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.service:hover {
+  background-color: #00c7e6;
+}
+
+.service-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.service-intro {
+  color: #dce5f0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.service-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
