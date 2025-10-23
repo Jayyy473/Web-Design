@@ -114,9 +114,27 @@ i {
 
 
 /*TODO: @media all and (max-width: 800px) {*/
-
+@media all and (max-width: 800px) {
+    form {
+        width: 95%;             
+        max-width: 660px;      
+    }
+}
 /*}*/
 
 /*TODO: @media all and (max-width: 660px) {*/
-
+@media all and (max-width: 660px) {
+    form {
+        width: 90%;
+    }
+    .left-contact, .right-contact {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+    .right-contact {
+        border-right: none;
+        padding: 0;
+    }
+}
 /*}*/

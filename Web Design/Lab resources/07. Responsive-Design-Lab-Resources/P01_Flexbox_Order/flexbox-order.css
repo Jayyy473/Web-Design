@@ -1,18 +1,59 @@
 /*TODO write CSS here*/
+body {
+	Display: flex;
+	Flex-Flow: row wrap;
+	Font-Weight: bold;
+	Text-Align: center;
+	Padding: 30px;
+}
+body > * {
+	Padding: 10px;
+	Flex: 1 100%;
+}
+.header {
+	Background: tomato;
+}
+.footer {
+	Background: lightgreen;
+}
+.main-article {
+	Text-Align: left;
+	Background: deepskyblue;
+}
+.aside-1 {
+	Background: gold;
+}
+.aside-2 {
+	Background: hotpink;
+}
 
+aside.hide {
+  display: none;
+}
 
+body.dark { background:#222; color:#eee; }
+aside.hide { display:none; }
 
-
+#restoreBtn {
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 /*TODO: @media all and  (min-width: 800px) {*/
-
-
-
+@media all and  (min-width: 800px) {
+	.main-article    {  flex: 3 0;  }
+	.aside-1 { order: 1; }
+	.main-article { order: 2; }
+	.aside-2 { order: 3; }
+	.footer  { order: 4; }
 
 /*}*/
 
 /*TODO: @media all and (min-width: 600px) {*/
 
-
+@media all and (min-width: 600px) {
+    .aside { flex: 1 0; }
+}
 
 /*}*/

@@ -46,7 +46,7 @@ main h2 {
 .hr-solution {
     display: flex;
     flex-direction: column;
-    background: url("img/shv_sunrise_preview.jpg") center center no-repeat;
+    background: url("images/shv_sunrise_preview.jpg") center center no-repeat;
     background-size: cover;
     height: 600px;
     max-width: 100%;
@@ -98,7 +98,7 @@ nav {
     display: none;
     width: 40px;
     height: 40px;
-    background: #4C8FEC url(img/menu-icon.png) center;
+    background: #4C8FEC url(images/menu-icon.png) center;
 
 }
 
@@ -117,5 +117,68 @@ a:hover#menu-icon {
 
 
 /*TODO: @media all and (max-width: 880px) {*/
+/* Responsive: up to 880px */
+@media all and (max-width: 880px) {
+
+    /* Show hamburger menu */
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    /* Hide the nav list by default */
+    .top-list {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: #fff;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    /* When nav is active (you’ll toggle this with JS) */
+    nav.active .top-list {
+        display: flex;
+    }
+
+    .top-list li {
+        margin: 10px 0;
+    }
+
+    /* Stack articles vertically */
+    .business {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .business article {
+        width: 90%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .business article p {
+        max-width: 100%;
+    }
+
+    /* Hero section text centered and scaled */
+    .hr-solution h1, 
+    .hr-solution h2 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .learn-more, .subscribe-now {
+        width: auto;
+        padding: 12px 20px;
+    }
+}
 
 /*}*/
