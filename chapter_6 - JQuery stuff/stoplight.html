@@ -7,6 +7,29 @@
 			My First Web Stoplight
 		</title>
 		<link rel="stylesheet" type="text/css" href="css/light_style.css"/>
+		<script src="Resources/jquery-3.7.1.js"> </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+		<script>
+
+			$(document).ready(function(){
+				
+				$('#wrapper').animate({'margin-top': '15px'}, 1500);
+
+				$('input[type="button"]').click(function(){
+				$("light" ).css("background-color", "");
+				$('#' + $(this).val() + 'Light').css("background-color", $(this).val());
+			});
+			
+			$(".light").mouseover(function(){
+				$(".light").css("background-color", "");
+				let v_color = event.target.id;
+				v_color = v_color.replace("Light", "");
+				$(this).css("background-color", v_color);
+			});
+
+			});
+
+		</script>
 	</head>
 	<body>
 		<div id="wrapper">

@@ -5,7 +5,32 @@
         	Start Date: (today's date) -->
         <title>An Adequate Calculator</title>
 		<link rel="stylesheet" type="text/css" href="css/calculator.css" media="screen" />
+		<script src="Resources/jquery-3.7.1.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<script>
+			$(document).ready(function(){
+				$("input.show:button").click(function(){
+					$("#display").val($("#display").val()+$(this).val());
+				});
+
+				$("#C").click(function(){
+					$("#display").val("");	
+				});
+
+				$("#sign_switch").click(function(){
+					$("#display").val($("#display").val()*-1);
+				});
+
+				$("#percent").click(function(){
+					$("#display").val($("#display").val()/100);
+				});
+
+				$("#equals").click(function(){
+					$("#display").val(eval($("#display").val()));
+				});
+			});
+		</script>
     </head>
     <body>
 		<header>
